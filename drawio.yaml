@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  drawio:
+    image: jgraph/drawio
+    container_name: drawio
+    restart: unless-stopped
+    ports:
+      - 8443:8443
+      - 8070:8080
+    tty: true
+    stdin_open: true
